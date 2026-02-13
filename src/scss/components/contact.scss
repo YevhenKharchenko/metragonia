@@ -11,8 +11,8 @@
   margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 140px;
+    padding-bottom: 140px;
     max-width: 1440px;
   }
 }
@@ -28,14 +28,13 @@
 }
 
 .contact-subtitle {
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'Bungee', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  color: #fff4e6;
+  font-size: 18px;
+  line-height: 1.2;
   text-align: center;
-  margin-bottom: 14px;
+  color: #64a127;
+  margin-bottom: 18px;
 
   @include media(desktop) {
   }
@@ -45,29 +44,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #fff4e6;
-  max-width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-
-  @include media(desktop) {
-    margin-bottom: 28px;
-  }
-}
-
-.contact-text {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #fff4e6;
+  color: #1e1e1e;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #1e1e1e;
 
   @include media(desktop) {
   }

@@ -1,15 +1,23 @@
 .privacy-body {
+  .header {
+    background: #e6ecd9;
+  }
+
   .header-bg-wrapper {
     background-image: none;
   }
 
+  .header-context {
+    background: transparent;
+  }
+
   .menu-icon {
-    fill: #ff8a00;
+    fill: #fe7e17;
   }
 }
 
 .policy-section {
-  background: #392016;
+  background: linear-gradient(180deg, #e6ecd9 0%, #8ed5ef 100%);
   padding-top: 126px;
   padding-bottom: 80px;
 
@@ -20,13 +28,12 @@
 }
 
 .policy-main-title {
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'Bungee', sans-serif;
   font-weight: 400;
   font-size: 36px;
-  line-height: 1.5;
-  text-transform: uppercase;
+  line-height: 1.2;
   text-align: center;
-  color: #ff8a00;
+  color: #fe7e17;
   margin-bottom: 32px;
 
   @include media(desktop) {
@@ -35,11 +42,11 @@
 }
 
 .policy-title {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff4e6;
+  color: #1e1e1e;
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -47,11 +54,11 @@
 }
 
 .policy-text {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff4e6;
+  color: #1e1e1e;
 
   &:not(:last-child) {
     margin-bottom: 16px;
@@ -67,11 +74,11 @@
 }
 
 .policy-item {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff4e6;
+  color: #1e1e1e;
   margin-bottom: 8px;
 
   &:last-child {
