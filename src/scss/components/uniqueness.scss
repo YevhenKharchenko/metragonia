@@ -2,7 +2,7 @@
   padding-top: 80px;
 
   @include media(desktop) {
-    padding-top: 130px;
+    padding-top: 140px;
   }
 }
 
@@ -14,10 +14,10 @@
 .uniqueness-content-wrapper {
   @include media(desktop) {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 107px;
+    gap: 82px;
   }
 }
 
@@ -31,53 +31,41 @@
   }
 }
 
-.uniqueness-text-wrapper {
-  background: #663a28;
-  border-radius: 20px;
-  padding: 27px 22px;
+.uniqueness-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
   @include media(desktop) {
-    padding: 46px 42px;
+    gap: 20px;
     max-width: 522px;
   }
 }
 
-.uniqueness-subtitle {
-  font-family: 'Fredoka One', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  text-align: center;
-  color: #9be23b;
-  margin-bottom: 20px;
-
-  @include media(desktop) {
-    text-align: left;
-    margin-bottom: 32px;
-  }
-}
-
-.uniqueness-text-container {
+.uniqueness-list-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 8px;
 
-  @include media(desktop) {
+  &:nth-child(1) {
     align-items: start;
   }
+
+  @include media(desktop) {
+  }
 }
 
-.uniqueness-text {
-  font-family: 'Nunito', sans-serif;
+.check-icon {
+  min-width: 34px;
+}
+
+.uniqueness-item-text {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
-  color: #fff4e6;
+  color: #1e1e1e;
 
   @include media(desktop) {
-    text-align: left;
   }
 }

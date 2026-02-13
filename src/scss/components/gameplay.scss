@@ -1,38 +1,30 @@
 .gameplay-section {
   padding-top: 80px;
-  padding-bottom: 27px;
 
   @include media(desktop) {
-    padding-top: 130px;
-    padding-bottom: 35px;
+    padding-top: 140px;
   }
 }
 
 .gameplay-container {
-  padding: 0;
-
   @include media(desktop) {
   }
 }
 
 .gameplay-title {
   @include media(desktop) {
-    text-align: left;
-    margin-left: 110px;
-    margin-bottom: 25px;
   }
 }
 
 .gameplay-content-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 
   @include media(desktop) {
-    flex-direction: row;
-    align-items: start;
-    justify-content: start;
-    gap: 90px;
+    position: relative;
+    display: block;
   }
 }
 
@@ -41,41 +33,96 @@
   margin-right: auto;
 
   @include media(desktop) {
-    min-width: 668px;
-    margin: 0;
   }
 }
 
 .gameplay-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-
-  @include media(desktop) {
-    max-width: 334px;
-  }
-}
-
-.gameplay-list-item {
-  display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 20px;
 
   @include media(desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
-.pineapple-icon {
-  min-width: 34px;
-}
-
-.gameplay-item-text {
-  font-family: 'Nunito', sans-serif;
+.gameplay-text {
+  border: 3px solid #64a127;
+  border-radius: 8px;
+  padding: 7px;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff4e6;
+  text-align: center;
+  color: #1e1e1e;
 
   @include media(desktop) {
+    max-width: max-content;
+  }
+}
+
+.gameplay-first-text {
+  @include media(desktop) {
+    position: absolute;
+    bottom: 88px;
+    left: 0;
+  }
+}
+
+.gameplay-second-text {
+  @include media(desktop) {
+    position: absolute;
+    top: 183px;
+    right: 217px;
+  }
+}
+
+.gameplay-third-text {
+  @include media(desktop) {
+    position: absolute;
+    bottom: 213px;
+    right: 143px;
+  }
+}
+
+.gameplay-fourth-text {
+  @include media(desktop) {
+    position: absolute;
+    bottom: 7px;
+    right: 405px;
+  }
+}
+
+.gameplay-fifth-text {
+  @include media(desktop) {
+    position: absolute;
+    bottom: 110px;
+    right: 81px;
+  }
+}
+
+.gameplay-right-stars-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 91px;
+  }
+}
+
+.gameplay-left-stars-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 76px;
+    left: 55px;
   }
 }

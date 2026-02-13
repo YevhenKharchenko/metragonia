@@ -8,61 +8,42 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 
   @include media(desktop) {
-    padding-top: 130px;
+    padding-top: 140px;
     max-width: 1440px;
   }
 }
 
 .features-container {
+}
+
+.features-title {
   @include media(desktop) {
   }
 }
 
-.features-content-wrapper {
+.features-swiper-container {
+  max-width: 305px;
+  margin-left: auto;
+  margin-right: auto;
+
   @include media(desktop) {
-    position: relative;
+    max-width: 1440px;
   }
 }
 
-.features-text {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 500;
-  font-size: 28px;
-  text-align: center;
-  color: #fff4e6;
-  margin-bottom: 20px;
+.features-swiper-container.show {
+  visibility: visible;
+}
 
+.features-swiper-wrapper {
   @include media(desktop) {
-    max-width: 846px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 36px;
   }
 }
 
-.features-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-
-  @include media(desktop) {
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    padding: 0;
-  }
-}
-
-.features-list-item {
-  background: #663a28;
-  border-radius: 20px;
-  padding: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.features-slide {
   width: 100%;
   max-width: 305px;
 
@@ -70,25 +51,66 @@
   }
 }
 
-.features-item-text {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #fff4e6;
+.features-img {
+  margin-bottom: 11px;
 
   @include media(desktop) {
   }
 }
 
-.features-img {
+.features-item-text {
+  padding: 0 22px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #1e1e1e;
+
+  @include media(desktop) {
+  }
+}
+
+.controls {
   display: none;
 
   @include media(desktop) {
-    display: block;
-    position: absolute;
-    bottom: 44px;
-    right: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 28px;
   }
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media(desktop) {
+    &:hover {
+      transform: scale(1.1);
+
+      .arrow-icon {
+      }
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.arrow-icon {
 }
