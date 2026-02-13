@@ -1,5 +1,5 @@
 .context-menu {
-  background: #392016;
+  background: linear-gradient(180deg, #e6ecd9 0%, #8ed5ef 100%);
   display: none;
   justify-content: center;
   align-items: center;
@@ -19,13 +19,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .context-nav-list {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 32px;
+  gap: 28px;
 }
 
 .context-list-item {
@@ -35,18 +36,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff4e6;
+  color: #000;
   transition:
     color 0.3s ease-in-out,
     background 0.3s ease-in-out;
 
   &:active {
-    color: #ff8a00;
+    color: #fe7e17;
   }
+}
+
+.context-img {
+  position: absolute;
+  bottom: -168px;
+  right: -58px;
 }
 
 .is-open {

@@ -1,5 +1,5 @@
 .header {
-  background: #392016;
+  background: transparent;
   position: fixed;
   width: 100%;
   top: 0;
@@ -11,7 +11,7 @@
 }
 
 .header-context {
-  background: #392016;
+  background: transparent;
 }
 
 .header-bg-wrapper {
@@ -19,15 +19,15 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/hero/hero-bg-mob.png);
+  background-image: url(../img/hero/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: auto;
+  background-size: cover;
 
   @include media(desktop) {
     padding: 16px 0;
     max-width: 1440px;
-    background-image: none;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
   }
 }
 
@@ -46,9 +46,6 @@
   justify-content: end;
 
   @include media(desktop) {
-    background: #663a28;
-    border-radius: 20px;
-    padding: 16px;
     justify-content: start;
   }
 }
@@ -65,11 +62,11 @@
 }
 
 .nav-list-link {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff4e6;
+  color: #1e1e1e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +78,7 @@
   &:focus,
   &:active,
   &.active {
-    color: #ff8a00;
+    color: #fe7e17;
   }
 }
 
