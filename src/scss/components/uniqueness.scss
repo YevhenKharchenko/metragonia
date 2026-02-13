@@ -1,0 +1,83 @@
+.uniqueness-section {
+  padding-top: 80px;
+
+  @include media(desktop) {
+    padding-top: 130px;
+  }
+}
+
+.uniqueness-container {
+  @include media(desktop) {
+  }
+}
+
+.uniqueness-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 107px;
+  }
+}
+
+.uniqueness-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    margin: 0;
+  }
+}
+
+.uniqueness-text-wrapper {
+  background: #663a28;
+  border-radius: 20px;
+  padding: 27px 22px;
+
+  @include media(desktop) {
+    padding: 46px 42px;
+    max-width: 522px;
+  }
+}
+
+.uniqueness-subtitle {
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  color: #9be23b;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+}
+
+.uniqueness-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include media(desktop) {
+    align-items: start;
+  }
+}
+
+.uniqueness-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff4e6;
+
+  @include media(desktop) {
+    text-align: left;
+  }
+}

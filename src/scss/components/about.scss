@@ -1,0 +1,104 @@
+.about-gameplay-section-wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 130px;
+    max-width: 1440px;
+  }
+}
+
+.about-gameplay-bg-wrapper {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #663a28;
+  border-radius: 20px;
+
+  @include media(desktop) {
+    max-width: 1280px;
+    background-color: transparent;
+    background-image: url(../img/about/about-bg-desk.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+  }
+}
+
+.about-section {
+  padding-top: 27px;
+  scroll-margin-top: 110px;
+
+  @include media(desktop) {
+    scroll-margin-top: 180px;
+    padding-top: 20px;
+  }
+}
+
+.about-container {
+  padding: 0;
+
+  @include media(desktop) {
+  }
+}
+
+.about-title {
+  @include media(desktop) {
+    margin-bottom: -27px;
+  }
+}
+
+.about-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include media(desktop) {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.about-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    min-width: 313px;
+    margin: 0;
+  }
+}
+
+.about-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff4e6;
+
+  @include media(desktop) {
+    max-width: 520px;
+  }
+}
+
+.about-text-span {
+  font-weight: 700;
+}
+
+.about-br {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
+}

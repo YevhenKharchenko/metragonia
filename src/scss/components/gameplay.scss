@@ -1,0 +1,81 @@
+.gameplay-section {
+  padding-top: 80px;
+  padding-bottom: 27px;
+
+  @include media(desktop) {
+    padding-top: 130px;
+    padding-bottom: 35px;
+  }
+}
+
+.gameplay-container {
+  padding: 0;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-title {
+  @include media(desktop) {
+    text-align: left;
+    margin-left: 110px;
+    margin-bottom: 25px;
+  }
+}
+
+.gameplay-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 90px;
+  }
+}
+
+.gameplay-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    min-width: 668px;
+    margin: 0;
+  }
+}
+
+.gameplay-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    max-width: 334px;
+  }
+}
+
+.gameplay-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.pineapple-icon {
+  min-width: 34px;
+}
+
+.gameplay-item-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff4e6;
+
+  @include media(desktop) {
+  }
+}
